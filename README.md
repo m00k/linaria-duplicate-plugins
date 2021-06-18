@@ -5,6 +5,7 @@
 - https://github.com/callstack/linaria/blob/master/docs/CONFIGURATION.md#preact
     - add preact.config.js
     - additionally push '@babel/preset-typescript' to presets
+- install linaria webpack loader
 
 ## CLI Commands
 *   `npm install`: Installs dependencies
