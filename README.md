@@ -1,12 +1,38 @@
 # linaria-duplicate-plugins
 
+## log
 - https://github.com/callstack/linaria#installation
     - ```npm install @linaria/core @linaria/react @linaria/babel-preset @linaria/shaker```
 - https://github.com/callstack/linaria/blob/master/docs/CONFIGURATION.md#preact
-    - add preact.config.js
-    - additionally push '@babel/preset-typescript' to presets
-- install linaria webpack loader
-- remove '@babel/preset-react'
+    - add `preact.config.js` as described
+    - additionally push `@babel/preset-typescript` to presets in `preact.config.js`
+- install `@linaria/webpack-loader`
+- remove `@babel/preset-react` from presets in `preact.config.js`
+- create styled custom component as per https://github.com/callstack/linaria/blob/master/docs/BASICS.md#styling-custom-components
+- ```npm run build``` leads to `Error: Duplicate plugin/preset detected.`
+```
+Duplicates detected are:
+[
+  {
+    "alias": "./node_modules/babel-plugin-transform-react-remove-prop-types/lib/index.js",
+    "dirname": ".",
+    "ownPass": false,
+    "file": {
+      "request": "./node_modules/babel-plugin-transform-react-remove-prop-types/lib/index.js",
+      "resolved": "./node_modules/babel-plugin-transform-react-remove-prop-types/lib/index.js"
+    }
+  },
+  {
+    "alias": "./node_modules/babel-plugin-transform-react-remove-prop-types/lib/index.js",
+    "dirname": ".",
+    "ownPass": false,
+    "file": {
+      "request": "./node_modules/babel-plugin-transform-react-remove-prop-types/lib/index.js",
+      "resolved": "./node_modules/babel-plugin-transform-react-remove-prop-types/lib/index.js"
+    }
+  }
+]
+```
 
 ## CLI Commands
 *   `npm install`: Installs dependencies
