@@ -4,7 +4,7 @@
     - ```npm install @linaria/core @linaria/react @linaria/babel-preset @linaria/shaker```
 - https://github.com/callstack/linaria/blob/master/docs/CONFIGURATION.md#preact
     - add preact.config.js
-
+    - additionally push '@babel/preset-typescript' to presets
 
 ## CLI Commands
 *   `npm install`: Installs dependencies
