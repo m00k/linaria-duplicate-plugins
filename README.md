@@ -6,6 +6,7 @@
     - add preact.config.js
     - additionally push '@babel/preset-typescript' to presets
 - install linaria webpack loader
+- remove '@babel/preset-react'
 
 ## CLI Commands
 *   `npm install`: Installs dependencies
