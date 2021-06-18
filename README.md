@@ -1,6 +1,7 @@
 # linaria-duplicate-plugins
 
 ## log
+- ```npx preact-cli create typescript linaria-duplicate-plugins```
 - https://github.com/callstack/linaria#installation
     - ```npm install @linaria/core @linaria/react @linaria/babel-preset @linaria/shaker```
 - https://github.com/callstack/linaria/blob/master/docs/CONFIGURATION.md#preact
