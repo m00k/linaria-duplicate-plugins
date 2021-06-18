@@ -18,6 +18,13 @@ function CoolComponent({ className, style }: any): any {
 
 const StyledCoolComponent = styled(CoolComponent)`
     background-color: tomato;
+    color: aliceblue;
+    font-size: x-large;
+    padding: 2rem;
+    position: absolute;
+    text-align: center;
+    top: calc(50% - 2rem);
+    width: 100%;
 `;
 
 const App: FunctionalComponent = () => {
