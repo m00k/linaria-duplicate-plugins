@@ -11,6 +11,8 @@
 - remove `@babel/preset-react` from presets in `preact.config.js`
 - create [styled custom component](https://github.com/m00k/linaria-duplicate-plugins/commit/da2ef9f087c81a03eb25a4d673692a9db402ac0d#diff-e3ca56b5627437b371d6b16864b11cada83aa8919f5311898a0cc5c25d82eb3eR11) as per [docs](https://github.com/callstack/linaria/blob/master/docs/BASICS.md#styling-custom-components)
 - ```npm run build``` leads to `Error: Duplicate plugin/preset detected.`
+- install `@babel/preset-react` and add to presets in `preact.config.js`
+- ```npm run build``` still leads to `Error: Duplicate plugin/preset detected.`
 ```
 Duplicates detected are:
 [
